@@ -4,7 +4,7 @@ import { SelectedProductProps, useTransactionContext } from "@/src/context";
 import { useState } from "react";
 import Image from "next/image";
 
-export function AddProductModal({ onClose, handleSave, handleInputChange }: AddProductModalProps) {
+export function AddProductModal({ onClose }: AddProductModalProps) {
 
     const { detailProduct, selectedProducts, setSelectedProducts } = useTransactionContext();
 

@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '../features/base/CustomScrollbar/customScrollbar.css';
-@import '../features/base/Loader/loader.module.css';
-
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
