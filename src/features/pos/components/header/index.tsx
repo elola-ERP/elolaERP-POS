@@ -34,7 +34,7 @@ export function PosHeader({ cashierName, date, cashierStatus, ...rest}: HeaderPr
 
     const handleLogout = () => {
         Cookies.remove(token)
-        router.push('/pin')
+        router.push('/')
         resetContext()
     }
 

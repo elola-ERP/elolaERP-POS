@@ -1,10 +1,10 @@
-import LoginPage from "./login";
+import { PinForm } from "../features";
 
 
 export default function Home() {
   return (
     <div>
-      <LoginPage/>
+      <PinForm />
     </div>
   );
 }
