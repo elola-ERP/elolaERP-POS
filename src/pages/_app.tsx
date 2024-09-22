@@ -1,13 +1,13 @@
 import Head from "next/head";
-import { TransactionContextProvider } from "../context";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import ReactQueryProvider from "../provider/reactQueryProvider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" user-scalable="no" />
         <title>eLoLa Point of Sales</title>
         <meta name="description" content="Best PWA app in the world!" />
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -50,9 +50,9 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <link rel="icon" href="/icons/logo-1.png" />
       </Head>
-      <TransactionContextProvider>
-        <Component {...pageProps} />
-      </TransactionContextProvider>
+        <ReactQueryProvider>
+          <Component {...pageProps} />
+        </ReactQueryProvider>
     </>
     
   )

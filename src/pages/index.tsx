@@ -1,10 +1,9 @@
-import { PinForm } from "../features";
-
+import { MasterLogin } from "../features";
 
 export default function Home() {
   return (
     <div>
-      <PinForm />
+      <MasterLogin />
     </div>
   );
 }
