@@ -6,7 +6,15 @@ import React from "react";
 export function PosWrapper() {
     return (
         <div>
-            <OperationalLogin />
+            <div>
+                <OperationalLogin />
+            </div>
+            <div className="hidden">
+                <OrderWrapper />
+            </div>
+            <div className="hidden">
+                <PaymentWrapper />
+            </div>
         </div>
 
     )

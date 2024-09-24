@@ -2,6 +2,8 @@ import Head from "next/head";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import ReactQueryProvider from "../provider/reactQueryProvider";
+import { Provider } from "react-redux";
+import { store } from "../redux/store";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -51,7 +53,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/icons/logo-1.png" />
       </Head>
         <ReactQueryProvider>
-          <Component {...pageProps} />
+          <Provider store={store}>
+            <Component {...pageProps} />
+          </Provider>
         </ReactQueryProvider>
     </>
     
